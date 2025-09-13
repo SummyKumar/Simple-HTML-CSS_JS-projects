@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+    font-family: "Open Sans",sans-serif;
+    
+    margin: 0;
+}
+h1{
+    
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.dice{
+    font-size: 7rem;
+    margin: 1rem;
+
+}
+.roll-animation{
+    animation-name: roll;
+    animation-duration: 0.7s;       /* how long one cycle lasts */
+    animation-fill-mode: forwards; /* smooth rotation */
+    
+}
+@keyframes roll {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(129, 129, 212);
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+
+}
+button:hover{
+    background-color: rgb(48, 48, 192);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: .5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+li{
+    font-size: 1.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+
+    margin: .5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* softer shadow */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/* vertically center */  
+}
+li span{
+    font-size: 3rem;
+    /* margin-right: 1rem; */
+}
